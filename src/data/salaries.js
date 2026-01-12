@@ -1,0 +1,36 @@
+export const salaries = [
+  { slug: "garson", title: "Almanya Garson Maaşı", avg: "14–18 € / saat", description: "Şehir, deneyim, bahşiş ve işletme tipine göre değişir." },
+  { slug: "barmen", title: "Barmen / Barkeeper Maaşı", avg: "14–19 € / saat", description: "Bar türü, vardiya ve bahşiş gelir üzerinde etkili." },
+  { slug: "asci", title: "Aşçı (Koch) Maaşı", avg: "2.400–3.200 € / ay", description: "Deneyim ve mutfak türüne göre değişir." },
+  { slug: "komi", title: "Komi (Servicehilfe) Maaşı", avg: "13–15 € / saat", description: "Giriş seviyesi; saat ve bahşiş önemli." },
+  { slug: "resepsiyonist", title: "Resepsiyonist Maaşı", avg: "2.300–3.000 € / ay", description: "Otel yıldızı, dil ve vardiya etkiler." },
+  { slug: "hotelfachmann", title: "Hotelfachmann / Hotelfachfrau Maaşı", avg: "2.200–2.900 € / ay", description: "Ausbildung sonrası artış; otel türü önemli." },
+  { slug: "housekeeping", title: "Housekeeping / Kat Hizmetleri Maaşı", avg: "13–16 € / saat", description: "Otel yoğunluğu ve saat planı belirleyici." },
+  { slug: "konditor", title: "Pastacı (Konditor) Maaşı", avg: "2.200–3.000 € / ay", description: "Bölge ve işletme türü maaşı etkiler." },
+  { slug: "kasiyer", title: "Kasiyer (Kasse) Maaşı", avg: "13–15 € / saat", description: "Perakende/market farkı ve vardiya etkiler." },
+  { slug: "depo", title: "Depo Görevlisi (Lager) Maaşı", avg: "13–17 € / saat", description: "Sektör ve vardiyaya göre değişir." },
+
+  { slug: "fahrradkurye", title: "Kurye (Fahrradkurier) Maaşı", avg: "13–17 € / saat", description: "Teslimat yoğunluğu ve prim/bonus olabilir." },
+  { slug: "temizlik", title: "Temizlik Görevlisi Maaşı", avg: "13–16 € / saat", description: "Sözleşme ve saat sayısı etkiler." },
+  { slug: "barista", title: "Barista Maaşı", avg: "13–17 € / saat", description: "Kafe tipi ve bahşiş önemli." },
+  { slug: "fahrer", title: "Şoför (Fahrer) Maaşı", avg: "2.400–3.300 € / ay", description: "Ehliyet sınıfı, rota ve sektör belirleyici." },
+  { slug: "bauhelfer", title: "İnşaat Yardımcısı (Bauhelfer) Maaşı", avg: "13–18 € / saat", description: "Saha şartları ve deneyim etkiler." },
+
+  { slug: "it_support", title: "IT Support Maaşı", avg: "2.800–3.800 € / ay", description: "Şirket, seviye ve sertifikalar belirleyici." },
+  { slug: "fachinformatiker", title: "Fachinformatiker Maaşı", avg: "3.000–4.500 € / ay", description: "Alan (SI/AE), tecrübe ve bölge etkiler." },
+  { slug: "lagerlogistik", title: "Fachlagerist / Lagerlogistik Maaşı", avg: "2.400–3.400 € / ay", description: "Lojistikte vardiya ve sorumluluk arttıkça artar." },
+  { slug: "pflegehelfer", title: "Bakım Personeli (Pflegehilfe) Maaşı", avg: "2.400–3.400 € / ay", description: "Vardiya ve kurum türü belirleyici." },
+  { slug: "krankenpflege", title: "Hemşire (Pflegefachkraft) Maaşı", avg: "3.200–4.500 € / ay", description: "Nöbetler ve deneyim maaşı yükseltir." },
+
+  { slug: "kfz_mechatroniker", title: "Kfz-Mechatroniker Maaşı", avg: "2.600–3.800 € / ay", description: "Servis türü ve uzmanlık etkiler." },
+  { slug: "elektriker", title: "Elektrikçi (Elektriker) Maaşı", avg: "2.800–4.000 € / ay", description: "Ustalık ve saha işi maaşı artırır." },
+  { slug: "sanitaer", title: "Tesisatçı (Sanitär/Heizung) Maaşı", avg: "2.800–4.100 € / ay", description: "Projeler ve çağrı işleri etkiler." },
+  { slug: "maler", title: "Boya Ustası (Maler) Maaşı", avg: "2.400–3.600 € / ay", description: "Sezon ve proje tipi belirleyici." },
+  { slug: "verkauf", title: "Satış Danışmanı (Verkauf) Maaşı", avg: "2.300–3.400 € / ay", description: "Prim sistemi varsa gelir artar." },
+
+  { slug: "lieferfahrer", title: "Teslimat Şoförü (Lieferfahrer) Maaşı", avg: "13–18 € / saat", description: "Rota ve yoğunluğa göre değişir." },
+  { slug: "security", title: "Güvenlik Görevlisi (Security) Maaşı", avg: "13–18 € / saat", description: "Gece vardiyası ve alan etkiler." },
+  { slug: "büro", title: "Ofis Personeli (Büro) Maaşı", avg: "2.300–3.300 € / ay", description: "Deneyim ve sektör belirleyici." },
+  { slug: "callcenter", title: "Call Center Maaşı", avg: "2.200–3.200 € / ay", description: "Dil ve hedef/prim sistemi etkiler." },
+  { slug: "paketleme", title: "Paketleme Personeli Maaşı", avg: "13–16 € / saat", description: "Vardiya ve hat hızı etkiler." },
+];
