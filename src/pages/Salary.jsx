@@ -37,6 +37,33 @@ export default function Salary() {
         <div className="mt-1 text-xl font-semibold">{data.avg}</div>
       </div>
 
+      {/* 2–3 paragraf içerik */}
+      <div className="rounded-2xl border p-5">
+        <div className="font-semibold">Detaylar</div>
+        <div className="mt-3 space-y-3 text-gray-800">
+          {(data.paragraphs || []).map((txt, i) => (
+            <p key={i}>{txt}</p>
+          ))}
+        </div>
+      </div>
+
+      {/* Mini FAQ */}
+      <div className="rounded-2xl border p-5 bg-gray-50">
+        <div className="font-semibold">Sık Sorulan Sorular</div>
+        <div className="mt-3 space-y-3">
+          {(data.faqs || []).length === 0 ? (
+            <div className="text-sm text-gray-600">Bu sayfa için SSS henüz eklenmedi.</div>
+          ) : (
+            data.faqs.map((f, i) => (
+              <div key={i} className="rounded-2xl border bg-white p-4">
+                <div className="font-semibold">{f.q}</div>
+                <div className="mt-1 text-sm text-gray-700">{f.a}</div>
+              </div>
+            ))
+          )}
+        </div>
+      </div>
+
       <AdSlot label="Maaş Sayfası Reklam Alanı" />
 
       <div className="rounded-2xl border p-5">
@@ -54,9 +81,7 @@ export default function Salary() {
         <div className="flex items-center justify-between gap-3">
           <div>
             <div className="font-semibold">İlgili Blog Yazıları</div>
-            <div className="text-sm text-gray-600">
-              Bu maaş sayfasıyla bağlantılı 3 yazı.
-            </div>
+            <div className="text-sm text-gray-600">Bu konuyla bağlantılı 3 yazı.</div>
           </div>
           <Link className="text-sm underline" to="/blog">
             Tüm blog →
