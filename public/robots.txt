@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://almanya-hibrit-npcor9xzb-ahmet-ulas-cankayas-projects.vercel.app/sitemap.xml
+Sitemap: https://almanya-hibrit.vercel.app/sitemap.xml
