@@ -1,3 +1,11 @@
+import Seo from "../components/Seo.jsx";
+
+<Seo
+  title="Almanya Yaşam Rehberi | Maaşlar, Blog ve Hesaplayıcılar"
+  description="Almanya’da yaşam ve çalışma için maaş rehberleri, blog yazıları ve pratik hesaplayıcılar."
+  canonicalPath="/"
+/>
+
 export default function Home() {
   return (
     <div className="space-y-6">

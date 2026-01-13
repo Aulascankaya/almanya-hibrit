@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // site adresin (production)
-const SITE_URL = "https://almanya-hibrit.vercel.app";
+const SITE_URL = "https://www.almanyayasam.de";
 
 // data dosyalarını oku (ESM export olduğu için dynamic import)
 const salariesPath = path.join(__dirname, "..", "src", "data", "salaries.js");
