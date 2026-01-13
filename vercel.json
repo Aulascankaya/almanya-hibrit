@@ -1,8 +1,15 @@
 {
-  "rewrites": [
+  "redirects": [
     {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "has": [
+        {
+          "type": "host",
+          "value": "almanya-hibrit.vercel.app"
+        }
+      ],
+      "destination": "https://www.almanyayasam.de/$1",
+      "permanent": true
     }
   ]
 }
