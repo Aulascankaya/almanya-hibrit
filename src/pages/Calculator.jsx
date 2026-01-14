@@ -2,6 +2,8 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import AdSlot from "../components/AdSlot.jsx";
 import { salaries } from "../data/salaries";
+import Seo from "../components/Seo.jsx";
+
 
 export default function Calculator() {
   const [tab, setTab] = useState("rent"); // "rent" | "target"
@@ -9,6 +11,12 @@ export default function Calculator() {
 
   return (
     <div className="space-y-6">
+      <Seo
+  title="Hesaplayıcılar | Almanya Yaşam Rehberi"
+  description="Gelir, kira oranı ve hedef gelire göre saatlik ücret hesaplayıcıları."
+  canonicalPath="/hesaplayici"
+/>
+
       {/* Başlık */}
       <div>
         <h1 className="text-2xl font-bold">Hesaplayıcılar</h1>
