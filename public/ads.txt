@@ -1,3 +1,1 @@
-# ads.txt
-# Bu dosya AdSense onayı sonrası Google'ın verdiği satırla güncellenecek.
-# Şimdilik placeholder.
+google.com, pub-2276615017379965, DIRECT, f08c47fec0942fa0
