@@ -22,12 +22,14 @@ export default function SalaryList() {
         const haystack = `${title} ${slug} ${desc} ${avg}`;
         if (!haystack.includes(normalizedQuery)) return null;
 
+        // Skor: başlık > slug > açıklama > avg
         let score = 0;
         if (title.includes(normalizedQuery)) score += 50;
         if (slug.includes(normalizedQuery)) score += 35;
         if (desc.includes(normalizedQuery)) score += 20;
         if (avg.includes(normalizedQuery)) score += 10;
 
+        // Eşleşme baştaysa daha iyi
         const idxTitle = title.indexOf(normalizedQuery);
         if (idxTitle === 0) score += 15;
         else if (idxTitle > 0) score += 5;
@@ -49,6 +51,7 @@ export default function SalaryList() {
       />
 
       <div className="space-y-6">
+        {/* Başlık */}
         <div>
           <h1 className="text-2xl font-bold">Maaş Rehberleri</h1>
           <p className="mt-2 text-gray-700">
@@ -59,34 +62,32 @@ export default function SalaryList() {
           </p>
         </div>
 
-        {/* Arama + temizleme */}
+        {/* Arama + X */}
         <div className="rounded-2xl border p-5 bg-gray-50">
-          <div className="flex items-end gap-2">
-            <label className="block w-full">
-              <div className="text-sm font-medium">Meslek ara</div>
+          <label className="block">
+            <div className="text-sm font-medium">Meslek ara</div>
 
-              <div className="mt-2 relative">
-                <input
-                  value={q}
-                  onChange={(e) => setQ(e.target.value)}
-                  placeholder="Örn: fachinformatiker, büro, pflege, lager..."
-                  className="w-full rounded-xl border px-3 py-2 pr-10 outline-none focus:ring-2 focus:ring-black bg-white"
-                />
+            <div className="mt-2 relative">
+              <input
+                value={q}
+                onChange={(e) => setQ(e.target.value)}
+                placeholder="Örn: fachinformatiker, büro, pflege, lager..."
+                className="w-full rounded-xl border px-3 py-2 pr-10 outline-none focus:ring-2 focus:ring-black bg-white"
+              />
 
-                {q ? (
-                  <button
-                    type="button"
-                    onClick={() => setQ("")}
-                    className="absolute right-2 top-1/2 -translate-y-1/2 px-2 py-1 rounded-lg border bg-white hover:bg-gray-50 text-sm"
-                    aria-label="Aramayı temizle"
-                    title="Temizle"
-                  >
-                    ×
-                  </button>
-                ) : null}
-              </div>
-            </label>
-          </div>
+              {q ? (
+                <button
+                  type="button"
+                  onClick={() => setQ("")}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 px-2 py-1 rounded-lg border bg-white hover:bg-gray-50 text-sm"
+                  aria-label="Aramayı temizle"
+                  title="Temizle"
+                >
+                  ×
+                </button>
+              ) : null}
+            </div>
+          </label>
 
           <div className="mt-3 text-xs text-gray-500">
             İpucu: Almanca veya Türkçe yazabilirsin. Örn:{" "}
@@ -95,6 +96,7 @@ export default function SalaryList() {
           </div>
         </div>
 
+        {/* Sonuç sayısı */}
         <div className="text-sm text-gray-600">
           {normalizedQuery ? (
             <>
@@ -109,6 +111,7 @@ export default function SalaryList() {
           )}
         </div>
 
+        {/* Sonuçlar */}
         {filtered.length > 0 ? (
           <div className="grid md:grid-cols-2 gap-4">
             {filtered.map((s) => (
@@ -120,9 +123,11 @@ export default function SalaryList() {
                 <div className="text-lg font-semibold">
                   <Highlight text={s.title} query={normalizedQuery} />
                 </div>
+
                 <div className="mt-1 text-sm text-gray-600">
                   <Highlight text={s.avg} query={normalizedQuery} />
                 </div>
+
                 <div className="mt-2 text-sm text-gray-700">
                   <Highlight text={s.description} query={normalizedQuery} />
                 </div>
