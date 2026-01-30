@@ -3,13 +3,16 @@
     {
       "source": "/(.*)",
       "has": [
-        {
-          "type": "host",
-          "value": "almanya-hibrit.vercel.app"
-        }
+        { "type": "host", "value": "almanya-hibrit.vercel.app" }
       ],
       "destination": "https://www.almanyayasam.de/$1",
       "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
