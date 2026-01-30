@@ -1,0 +1,3 @@
+# ads.txt
+# Bu dosya AdSense onayı sonrası Google'ın verdiği satırla güncellenecek.
+# Şimdilik placeholder.
